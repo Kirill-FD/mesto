@@ -1,0 +1,27 @@
+.form__string {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 54px;
+    width: 358px;
+    padding-bottom: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form__string:last-child {
+    margin-top: 43px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form__string {
+        font-size: 14px;
+        line-height: 17px;
+        width: 238px;
+    }
+}
