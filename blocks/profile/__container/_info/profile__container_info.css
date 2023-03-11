@@ -1,7 +1,0 @@
-.profile__container_info {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 18px;
-    align-items: center;
-}
