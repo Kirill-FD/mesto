@@ -1,0 +1,12 @@
+.profile__user_edit-button {
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    background: #000;
+    max-width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.profile__user_edit-button:hover {
+    opacity: 0.6;
+}
