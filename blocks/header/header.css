@@ -1,8 +1,0 @@
-.header {
-    display: flex;
-    flex-direction: column;
-    max-width: 880px;
-    width: 100%;
-    align-self: center;
-    border-bottom:  1px solid #545454;
-}
