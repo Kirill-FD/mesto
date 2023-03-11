@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./Inter-Regular.woff2") format("woff2"),
+       url("./Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./Inter-Medium.woff2") format("woff2"),
+       url("./Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./Inter-Black.woff2") format("woff2"),
+       url("./Inter-Black.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('ArialMT.eot');
+	src: local('Arial'), local('ArialMT'),
+		url('ArialMT.eot?#iefix') format('embedded-opentype'),
+		url('ArialMT.woff') format('woff'),
+		url('ArialMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('Arial-BoldMT.eot');
+	src: local('Arial Bold'), local('Arial-BoldMT'),
+		url('Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+		url('Arial-BoldMT.woff') format('woff'),
+		url('Arial-BoldMT.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('Arial-Black.eot');
+	src: local('Arial Black'), local('Arial-Black'),
+		url('Arial-Black.eot?#iefix') format('embedded-opentype'),
+		url('Arial-Black.woff') format('woff'),
+		url('Arial-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
