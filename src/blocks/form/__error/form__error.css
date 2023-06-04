@@ -1,0 +1,16 @@
+.form__error {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F00;
+    margin-top: 5px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form__error {
+        height: 45px;
+    }
+}
