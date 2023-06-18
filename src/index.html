@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto-main</title>
+</head>
+
+<body class="page">
+    <header class="header">
+        <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="Логотип.">
+    </header>
+    <main class="content">
+        <section class="profile">
+            <div class="profile__container">
+                <button class="profile__avatar-button" type="button" aria-label="Сменить аватар">
+                    <img class="profile__avatar" alt="Аватар." src="#">
+                </button>
+                <div class="profile__info">
+                    <h1 class="profile__title"></h1>
+                    <button class="profile__edit-button" type="button">
+                    </button>
+                    <p class="profile__content"></p>
+                </div>
+            </div>
+            <button class="profile__add-button" type="button"></button>
+        </section>
+
+        <section>
+            <ul class="elements">
+            </ul>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">© 2023 Mesto World</p>
+    </footer>
+
+    <div class="popup popup-profile">
+        <div class="popup__container">
+            <button class="popup__close popup__close_profile popup__close_button_profile" type="button"></button>
+            <form action="#" class="form form-profile" name="Profile" novalidate>
+                <h2 class="form__title">Редактировать профиль</h2>
+                <input type="text" id="name-input" name="name" class="form__box form__box_input_name" placeholder="Имя"
+                    minlength="2" maxlength="40" value="" required>
+                <span id="name-input-error" class="form__error"></span>
+                <input type="text" id="about-input" name="about" class="form__box form__box_input_about"
+                    placeholder="О себе" minlength="2" maxlength="200" value="" required>
+                <span id="about-input-error" class="form__error"></span>
+                <button class="form__save form__save_button_profile" type="submit" name="form__save">
+                    Сохранить
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup-forma">
+        <div class="popup__container">
+            <button class="popup__close popup__close_profile popup__close_button_forma" type="button"></button>
+            <form action="#" class="form form-card" name="Cards" novalidate>
+                <h2 class="form__title">Новое место</h2>
+                <input type="text" id="title" name="title" class="form__box form__box_input_title"
+                    placeholder="Название" minlength="2" maxlength="30" required>
+                <span id="title-error" class="form__error"></span>
+                <input type="url" id="link" name="link" class="form__box form__box_input_link"
+                    placeholder="Ссылка на картинку" required>
+                <span id="link-error" class="form__error"></span>
+                <button class="form__save form__save_button_forma" type="submit">
+                    Создать
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup-card">
+        <div class="popup__case">
+            <img class="popup__image" alt="#" src="#">
+            <button class="popup__close popup__close_card popup__close_button_card" type="button"></button>
+            <h2 class="popup__title"></h2>
+        </div>
+    </div>
+    <div class="popup popup-edit">
+        <div class="popup__container">
+            <button class="popup__close popup__close_profile" type="button"></button>
+            <form class="form" name="Avatar" novalidate>
+                <h2 class="form__title">Обновить аватар</h2>
+                <input type="url" id="avatar" name="avatar" class="form__box form__box_input_avatar"
+                    placeholder="Ссылка на аватарку" value="" required>
+                <span id="avatar-error" class="form__error"></span>
+                <button class="form__save" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup-delete">
+        <div class="popup__container">
+            <button class="popup__close popup__close_delete" type="button"></button>
+            <form class="form" name="cardDelete" novalidate>
+                <h2 class="form__title">Вы уверены?</h2>
+                <button class="form__save" type="submit">Да</button>
+            </form>
+        </div>
+    </div>
+
+    <template id="cardElement">
+        <li class="elements__item">
+            <article class="elements__list">
+                <button class="elements__remove" type="button"></button>
+                <img class="elements__image" alt="">
+                <div class="elements__group">
+                    <h2 class="elements__title"></h2>
+                    <div class="elements__container">
+                        <button class="elements__like" type="button"></button>
+                        <p class="elements__counter"></p>
+                    </div>
+                </div>
+            </article>
+        </li>
+    </template>
+
+</body>
+
+</html>
